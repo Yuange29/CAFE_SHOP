@@ -1,0 +1,53 @@
+{
+    "name": "shop-backend",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "build": "nest build",
+        "start": "nest start",
+        "start:dev": "nest start --watch",
+        "start:prod": "node dist/main",
+        "typeorm": "typeorm-ts-node-commonjs",
+        "migration:generate": "typeorm-ts-node-commonjs migration:generate",
+        "migration:run": "typeorm-ts-node-commonjs migration:run",
+        "migration:revert": "typeorm-ts-node-commonjs migration:revert",
+        "migration:show": "typeorm-ts-node-commonjs migration:show",
+        "seed:roles": "ts-node src/database/seeds/run-role-seed.ts",
+        "lint": "eslint \"src/**/*.ts\"",
+        "test": "npm run build && node --test"
+    },
+    "dependencies": {
+        "@nestjs/common": "^10.4.15",
+        "@nestjs/config": "^3.3.0",
+        "@nestjs/core": "^10.4.15",
+        "@nestjs/jwt": "^10.2.0",
+        "@nestjs/mapped-types": "^12.0.0",
+        "@nestjs/passport": "^10.0.0",
+        "@nestjs/platform-express": "^10.4.15",
+        "@nestjs/typeorm": "^10.0.2",
+        "bcrypt": "^5.1.1",
+        "class-transformer": "^0.5.1",
+        "class-validator": "^0.14.4",
+        "cookie-parser": "^1.4.7",
+        "mysql2": "^3.24.6",
+        "passport": "^0.6.0",
+        "passport-jwt": "^4.0.1",
+        "pg": "^8.23.1",
+        "reflect-metadata": "^0.2.2",
+        "rxjs": "^7.8.1",
+        "typeorm": "^0.3.31"
+    },
+    "devDependencies": {
+        "@nestjs/cli": "^10.4.9",
+        "@nestjs/schematics": "^10.2.3",
+        "@nestjs/testing": "^10.4.15",
+        "@types/bcrypt": "^6.0.0",
+        "@types/cookie-parser": "^1.4.10",
+        "@types/node": "^22.10.2",
+        "@types/passport-jwt": "^4.0.1",
+        "ts-node": "^10.9.2",
+        "tsconfig-paths": "^4.2.0",
+        "typeorm-ts-node-commonjs": "^0.3.20",
+        "typescript": "^5.7.2"
+    }
+}

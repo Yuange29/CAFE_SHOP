@@ -1,0 +1,20 @@
+export enum PermissionAction {
+    CREATE_PRODUCT = "CREATE_PRODUCT",
+    UPDATE_PRODUCT = "UPDATE_PRODUCT",
+    UPDATE_VARIANT = "UPDATE_VARIANT",
+    ADD_VARIANT = "ADD_VARIANT",
+    ADJUST_STOCK = "ADJUST_STOCK",
+    ADJUST_IMAGE = "ADJUST_IMAGE",
+    CART = "CART",
+    CREATE = "CREATE",
+    READ = "READ",
+    UPDATE = "UPDATE",
+    DELETE = "DELETE",
+    EXPORT = "EXPORT",
+    IMPORT = "IMPORT",
+    VIEW = "VIEW",
+    MANAGE = "MANAGE",
+    APPROVE = "APPROVE",
+}
+
+export const PERMISSION_ACTIONS = Object.values(PermissionAction);
